@@ -24,6 +24,7 @@ import java.util.List;
 public class BoardController {
 
     private final S3Service s3Service;
+    
     private final BoardService boardService;
 
     @PostMapping(value = "/create", consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
